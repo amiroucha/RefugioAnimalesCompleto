@@ -76,11 +76,11 @@ perroGato:{
     height:210, 
     position:'relative', 
     left:69, 
-    top:-47,
+    top:-47, 
 }
 ,
 textoAccede:{
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
@@ -89,16 +89,17 @@ textoAccede:{
 },
 input: {
     borderRadius: 30,
-    padding: 10,
-    fontSize: 16,
+    padding: 15,
+    fontSize: 20,
     margin: 10,
-    marginBottom: 15,
+    marginBottom: 10,
     backgroundColor: Colors.orangeInput,
 },
 olvidarContra:{
-    fontSize: 18,
+    fontSize: 20,
     color: Colors.white,
     marginBottom: 20,
+    marginTop:10,
     fontFamily:'Poppins',
     textDecorationLine:"underline",
 },
@@ -115,15 +116,14 @@ pataArriba:{
     width: 40,
     height:40,
     alignSelf:'flex-start',
-    marginLeft: 14,
-    transform:[{rotate :'-45deg'}] //añadi esto para rotar
+    transform:[{rotate: '-45deg'}],
 },
 pataAbajo:{
     width: 40,
     height:40,
     alignSelf:'flex-end',
     marginRight: 14,
-    transform:[{rotate :'45deg'}] //añadi esto para rotar
+    transform:[{rotate: '45deg'}],
 },
 //PANTALLA DE Registro------------------------------------
 contenedorGrisOscuro:{
@@ -197,7 +197,6 @@ imagenesMenu:{
     width:60,
     height:60,
     margin:10,
-    borderRadius:10 //añadi esto para redondear los bordes de las imagenes naranjas
 },
 //comunidad animal-----------------------------------------------
 titulocomunidad:{
@@ -282,6 +281,17 @@ inputRescate:{
     borderRadius: 30,
     margin: 15,
     marginBottom: 0,
+    marginLeft: 15,
+    color: Colors.blueText,
+},
+input2Rescate:{
+    backgroundColor: Colors.white,
+    borderRadius: 30,
+    margin: 15,
+    color: Colors.blueText,
+    width:'85%',
+    height:  80,
+
 },
 
 })

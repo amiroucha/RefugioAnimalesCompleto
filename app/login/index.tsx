@@ -2,7 +2,7 @@ import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../components/Boton';
-import { Redirect } from "expo-router";
+import { Link, Redirect } from "expo-router";
 
 
 const login = () => {
@@ -15,8 +15,8 @@ const login = () => {
         ></Image>
       </View>
 
-      <Text style={GlobalStyles.tituloLogin}>Bienvenido a</Text>
-      <Text style={GlobalStyles.PetConnect}>Petconnect</Text>
+      <Text style={GlobalStyles.tituloLogin}>Bienvenido a </Text>
+      <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
 
       <View style={GlobalStyles.fondoBlancoLog}>
         
@@ -48,7 +48,9 @@ const login = () => {
           />
           <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' backgroundColor='naranja'></Boton>
+              <Boton label='Acceder' backgroundColor='naranja' link='../menu'>   
+              
+              </Boton>
           </View>
 
 

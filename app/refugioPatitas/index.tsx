@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 
-const comunidad = () => {
+const refugio = () => {
     return (
         <View style={GlobalStyles.contenedor}>
             
@@ -45,4 +45,4 @@ const comunidad = () => {
 )}
 
 
-export default comunidad
+export default refugio
