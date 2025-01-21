@@ -293,5 +293,12 @@ input2Rescate:{
     height:  80,
 
 },
+//refigio de patitas-----------------------------------------------
+busqueda:{
+    width:'100%',
+    margin:10,
+    maxWidth:'85%'
+},
+
 
 })

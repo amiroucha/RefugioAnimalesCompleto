@@ -15,8 +15,8 @@ const login = () => {
         ></Image>
       </View>
 
-      <Text style={GlobalStyles.tituloLogin}>Bienvenido a </Text>
-      <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
+      <Text style={GlobalStyles.tituloLogin} adjustsFontSizeToFit={true} numberOfLines={1}>Bienvenido a </Text>
+      <Text style={GlobalStyles.PetConnect} adjustsFontSizeToFit={true} numberOfLines={1}>PetConnect</Text>
 
       <View style={GlobalStyles.fondoBlancoLog}>
         
@@ -31,7 +31,7 @@ const login = () => {
             source={require("../../assets/images/huellaNaranja.png")}
             style={GlobalStyles.pataArriba}
           ></Image>
-          <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
+          <Text style= {GlobalStyles.textoAccede} adjustsFontSizeToFit={true} numberOfLines={1}>Accede al refugio</Text>
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
             style={GlobalStyles.pataAbajo}
@@ -47,7 +47,7 @@ const login = () => {
             placeholder="Contraseña"
           />
           <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
-              <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
+              <Text style={GlobalStyles.textRegistrar} adjustsFontSizeToFit={true} numberOfLines={1}>Regístrate aquí</Text>
               <Boton label='Acceder' backgroundColor='naranja' link='../menu'>   
               
               </Boton>

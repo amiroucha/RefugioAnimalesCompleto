@@ -12,7 +12,7 @@ const refugio = () => {
             <View style={{flexDirection: 'row', alignItems:'center'}}>
 
                 <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>PATITAS AL RESCATE</Text>
+                <Text style={GlobalStyles.titulocomunidad}>REFUGIO DE PATITAS</Text>
                 <Image 
                     source={require("../../assets/images/logo_2.png")}
                     style={{width: 50, height:50, position:'relative', right:15}}
@@ -21,24 +21,20 @@ const refugio = () => {
 
             <View style={GlobalStyles.cajaAzul}>
                 <Text style={GlobalStyles.textoInicioUbi}>
-                    Indica el punto donde un animal, una colonia o una 
-                    situación que requiere atención y descríbela para que 
-                    podamos actuar juntos
+                Adoptar es un compromiso paratoda la vida, piénsalo bien antes dedar el paso.
                 </Text>
-                <Image 
-                    source={require("../../assets/images/ubicacion.png")}
-                    style={{width: 300, height: 280, position:'relative', 
-                        alignSelf:'center', borderRadius:30, margin: 15, marginBottom:0}}
-                ></Image>
-                <TextInput style={GlobalStyles.inputRescate}
-                    placeholder="Buscar ubicación..."/>
+                <Text style={GlobalStyles.textoInicioUbi}>
+                Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.
+                </Text>
 
-                <Text style={GlobalStyles.textoinfoUbi}>La ubicación se añadirá cuando se seleccione en el mapa.</Text>
-
+               
 
             </View>
-            <TextInput placeholder="Describe la situación aquí..." style={GlobalStyles.input2Rescate}/>
 
+            <TextInput style={[GlobalStyles.inputRescate, GlobalStyles.busqueda]}
+                    placeholder="Búsqueda por nombre..."/>
+            
+            
         </View>
 
 
