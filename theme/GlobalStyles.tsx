@@ -1,13 +1,23 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "./Colors";
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { reloadAppAsync } from "expo";
+import { Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 export const GlobalStyles =  StyleSheet.create({
 contenedor:{
     backgroundColor: Colors.blueDark,
     alignItems:  'center',
     flex: 1,
+    justifyContent: 'center',
+    
 },
+box: {
+    width: '100%',
+    height: 100,
+  },
 contenedorRegistro:{
     backgroundColor: Colors.white,
     alignItems:  'center',
@@ -20,7 +30,7 @@ boton:{
     height: 100,
     textAlign: 'center',
     padding: 10,
-    fontSize: 21,
+    fontSize: RFValue(16),
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
     fontFamily:'Poppins',
@@ -33,7 +43,8 @@ botonNaranja:
     textAlign:'center',
     padding: 15,
     width:'auto',
-    height: 59 ,
+    height: RFValue(50),
+
 },
 botonGris:
 {
@@ -54,11 +65,12 @@ fondoBlancoLog:{
     borderRadius: 30,
     flex: 1,
     width: '100%',
+
     top:50,
     marginBottom:59,
 },
 tituloLogin:{
-    fontSize: 29,
+    fontSize: RFValue(20),
     marginTop: 100,
     marginBottom:3,
     textAlign: "center",
@@ -67,20 +79,20 @@ tituloLogin:{
 },
 PetConnect:{
     textAlign: "center",
-    fontSize: 49,
+    fontSize: RFValue(45),
     fontFamily:'WendyOne',
     color: Colors.white,
 },
 perroGato:{
     width: 250, 
     height:210, 
-    position:'relative', 
-    left:69, 
+    position:'relative',
+    alignSelf:'center',
     top:-47, 
 }
 ,
 textoAccede:{
-    fontSize: 40,
+    fontSize: RFValue(30),
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
@@ -91,12 +103,12 @@ input: {
     borderRadius: 30,
     padding: 15,
     fontSize: 20,
-    margin: 10,
     marginBottom: 10,
+    width:'100%',
     backgroundColor: Colors.orangeInput,
 },
 olvidarContra:{
-    fontSize: 20,
+    fontSize: RFValue(15),
     color: Colors.white,
     marginBottom: 20,
     marginTop:10,

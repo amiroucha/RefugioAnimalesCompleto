@@ -7,7 +7,7 @@ import { Link, Redirect } from "expo-router";
 
 const login = () => {
   return (
-    <View style = {GlobalStyles.contenedor}>
+    <View style = {[GlobalStyles.contenedor]}>
       <View style={{height:100, width:'100%' , position:'absolute', top:13}}>
         <Image 
           source={require("../../assets/images/logo_2.png")}
@@ -15,46 +15,43 @@ const login = () => {
         ></Image>
       </View>
 
-      <Text style={GlobalStyles.tituloLogin} adjustsFontSizeToFit={true} numberOfLines={1}>Bienvenido a </Text>
-      <Text style={GlobalStyles.PetConnect} adjustsFontSizeToFit={true} numberOfLines={1}>PetConnect</Text>
+      <Text style={GlobalStyles.tituloLogin}>Bienvenido a </Text>
+      <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
 
       <View style={GlobalStyles.fondoBlancoLog}>
-        
+        <View style={{marginLeft:20, marginRight:20}}>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
           style={GlobalStyles.perroGato}
         ></Image>
 
-        <View style={{ flexDirection: 'column', flexWrap: 'wrap', bottom:50}}>
+        <View style={{display:'flex',flexDirection: 'column', flexWrap: 'wrap', bottom:50, alignItems:'center'}}>
 
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataArriba}
-          ></Image>
-          <Text style= {GlobalStyles.textoAccede} adjustsFontSizeToFit={true} numberOfLines={1}>Accede al refugio</Text>
+            style={GlobalStyles.pataArriba}></Image>
+          <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataAbajo}
-          ></Image>
+            style={GlobalStyles.pataAbajo}></Image>
             
           <TextInput
             style={GlobalStyles.input}
-            placeholder="Email"
-          />
+            placeholder="Email"/>
 
           <TextInput
             style={GlobalStyles.input}
-            placeholder="Contraseña"
-          />
-          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
+            placeholder="Contraseña"/>
+          <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-between', width:'100%'}}>
               <Text style={GlobalStyles.textRegistrar} adjustsFontSizeToFit={true} numberOfLines={1}>Regístrate aquí</Text>
-              <Boton label='Acceder' backgroundColor='naranja' link='../menu'>   
-              
-              </Boton>
+              <Boton label='Acceder' backgroundColor='naranja' link='../menu'></Boton>
           </View>
 
 
         </View>
+        </View>
+
+        
         
         
   
