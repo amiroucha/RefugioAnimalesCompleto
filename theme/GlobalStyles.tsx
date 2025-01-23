@@ -43,7 +43,7 @@ botonNaranja:
     textAlign:'center',
     padding: 15,
     width:'auto',
-    height: RFValue(50),
+    height: height * 0.07,
 
 },
 botonGris:
@@ -84,8 +84,8 @@ PetConnect:{
     color: Colors.white,
 },
 perroGato:{
-    width: 250, 
-    height:210, 
+    width: width * 0.64, 
+    height: height * 0.23, 
     position:'relative',
     alignSelf:'center',
     top:-47, 
@@ -101,10 +101,11 @@ textoAccede:{
 },
 input: {
     borderRadius: 30,
-    padding: 15,
-    fontSize: 20,
+    padding: 13,
+    fontSize: RFValue(16),
     marginBottom: 10,
     width:'100%',
+    height: height * 0.07,
     backgroundColor: Colors.orangeInput,
 },
 olvidarContra:{
@@ -116,25 +117,27 @@ olvidarContra:{
     textDecorationLine:"underline",
 },
 textRegistrar:{
-    fontSize: 20,
+    fontSize:  RFValue(16),
     color: Colors.blueText,
     textAlign: "left", 
     marginLeft: 10,  
-    textDecorationLine:"underline"
+    textDecorationLine:"underline",
+    alignSelf:'center'
 
 },
 //patas-------------------------------------------------------
 pataArriba:{
-    width: 40,
-    height:40,
+    width: width * 0.13,
+    height: height * 0.05,
     alignSelf:'flex-start',
     transform:[{rotate: '-45deg'}],
 },
 pataAbajo:{
-    width: 40,
-    height:40,
+    width: width * 0.13,
+    height:height * 0.05,
     alignSelf:'flex-end',
     marginRight: 14,
+    marginBottom:10,
     transform:[{rotate: '45deg'}],
 },
 //PANTALLA DE Registro------------------------------------
