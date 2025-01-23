@@ -1,6 +1,8 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image} from 'react-native';
+import { View, Text, Image, Pressable} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { router } from "expo-router";
+
 
 
 const menu = () => {
@@ -40,11 +42,25 @@ const menu = () => {
                         ></Image>
                     </View>
                     <View>
-                        <Text style={GlobalStyles.seccionesMenu}>Patitas al rescate</Text>
-                        <Text style={GlobalStyles.seccionesMenu}>Patitas en marcha</Text>
-                        <Text style={GlobalStyles.seccionesMenu}>Refugio de patitas</Text>
-                        <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
-                        <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
+                        <Pressable onPress={()=>{router.push('../patitasRescate')}}>
+                            <Text style={GlobalStyles.seccionesMenu}>Patitas al rescate</Text>
+                        </Pressable>
+
+                        <Pressable onPress={()=>{router.push('../comunidad')}}>
+                            <Text style={GlobalStyles.seccionesMenu}>Patitas en marcha</Text>
+                        </Pressable>
+                            
+                        <Pressable onPress={()=>{router.push('../refugio')}}>
+                            <Text style={GlobalStyles.seccionesMenu}>Refugio de patitas</Text>
+                        </Pressable>
+
+                        <Pressable onPress={()=>{router.push('../comunidad')}}>
+                            <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
+                        </Pressable>
+                            
+                        <Pressable onPress={()=>{router.push('../login')}}>
+                            <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
+                        </Pressable>
                     </View>
 
                 </View>

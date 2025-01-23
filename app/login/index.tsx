@@ -1,8 +1,8 @@
-import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
+import { View, Text, TextInput, Image, Pressable } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../components/Boton';
-import { Link, Redirect } from "expo-router";
+import { router } from "expo-router";
 
 
 const login = () => {
@@ -43,18 +43,17 @@ const login = () => {
             style={GlobalStyles.input}
             placeholder="Contraseña"/>
           <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-between', width:'100%'}}>
-              <Text style={GlobalStyles.textRegistrar} adjustsFontSizeToFit={true} numberOfLines={1}>Regístrate aquí</Text>
-              <Boton label='Acceder' backgroundColor='naranja' link='../menu'></Boton>
+          <Pressable onPress={()=>{router.push('../signUp')}}>
+                <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
+            </Pressable>
+
+            <Boton label='Acceder' backgroundColor='naranja' link='../menu'></Boton>
           </View>
 
 
         </View>
         </View>
 
-        
-        
-        
-  
       </View>
 
       <Text style ={GlobalStyles.olvidarContra}>¿Olvidaste la contraseña?</Text>

@@ -38,7 +38,7 @@ const comunidad = () => {
 
             </View>
             <TextInput placeholder="Describe la situación aquí..." style={GlobalStyles.input2Rescate}/>
-
+            <Boton label='Enviar' backgroundColor='naranja' link='../patitasRescate'></Boton>
         </View>
 
 

@@ -49,7 +49,7 @@ const comunidad = () => {
                 
 
                 <View style={{alignItems:'flex-end', marginEnd:10,}}>
-                    <Boton label='Nuevo' backgroundColor="naranja" width={120}></Boton>
+                    <Boton label='Nuevo' backgroundColor="naranja" width={120} link='../comunidad'></Boton>
                 </View>
             </View>
         

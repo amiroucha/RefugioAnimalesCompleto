@@ -65,7 +65,6 @@ fondoBlancoLog:{
     borderRadius: 30,
     flex: 1,
     width: '100%',
-
     top:50,
     marginBottom:59,
 },
@@ -97,7 +96,6 @@ textoAccede:{
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueText,
-    //backgroundColor: Colors.orangeInput,
 },
 input: {
     borderRadius: 30,
@@ -308,11 +306,99 @@ input2Rescate:{
     height:  80,
 
 },
-//refigio de patitas-----------------------------------------------
-busqueda:{
-    width:'100%',
+//refugio de patitas...............................
+primerTexto:{
+    padding: 10,
+    borderRadius:30,
+    fontFamily: 'Poppins',
+},
+titulo2Refu:{
+    color: Colors.blueDark,
+    fontWeight:'bold',
+    fontSize: 19,
+    fontFamily: 'Poppins',
+},
+inputRefugio:{
+    backgroundColor: Colors.white,
+    color: Colors.blueDark,
+    padding: 10,
+    borderRadius:30,
+    width: '90%',
+    fontFamily: 'Poppins',
+},
+contenedorAnimales:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius:30,
+    width: 170,
+    alignItems:'center',
+    marginBottom: 10,
+},
+nombrePerro:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontWeight:'bold',
+    alignSelf:'flex-start',
+    paddingLeft: 20,
+},
+
+//perros----------------------------------
+nombreUbica:{
+    //contenedor del nombre y la ubicacion
+    flexDirection: 'row',
+    columnGap: 230,
     margin:10,
-    maxWidth:'85%'
+
+
+},
+iconoUbi:{
+    color: Colors.blueText,
+},
+iconoCorazon:{
+    color: Colors.blueText,
+    top: -9,
+    position:'absolute',
+    right: 15,
+},
+nombrePluto:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontWeight:'bold',
+    fontSize: 20,
+},
+cajaNaranjaPerro:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius:30,
+    width: 110,
+    height: 55,
+    alignItems:'center',
+    margin: 3,
+},
+datosPerro:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontSize: 18,
+},
+perfilAna:{
+    flexDirection:'row',
+},
+cajaAzulperros:
+{
+    backgroundColor: Colors.blueLight,
+    borderRadius:30,
+    margin: 5,
+},
+nombreAna:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontSize: 16,
+    padding:5
+},
+iconoPerros:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius: 60,
+    padding: 5,
+    height: 45,
+
 },
 
 
