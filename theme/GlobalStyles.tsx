@@ -185,10 +185,9 @@ contenedorBotones:{
 },
 textoAccedeARefugio:{
     color:Colors.blueText, 
-    bottom: 5, 
-    fontSize: 20, 
+    fontSize: RFValue(16), 
     fontFamily:'Poppins',
-    position: 'absolute'
+    position:'relative',
 },
 //menu----------------------------------------
 textoSeccion:{

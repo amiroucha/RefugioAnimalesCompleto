@@ -57,9 +57,13 @@ const signUp = () => {
 
 
         </View>
-        <Pressable onPress={()=>{router.push('../login')}}>
-            <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio</Text>
-        </Pressable>
+
+        <View style={{display:'flex'}}>
+            <Pressable onPress={()=>{router.push('../login')}}>
+                <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio.</Text>
+            </Pressable>
+        </View>
+        
 
     </View> 
     )
