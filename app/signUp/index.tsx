@@ -18,8 +18,7 @@ const signUp = () => {
         <Text style={GlobalStyles.PetConnectRegistro}>Petconnect</Text>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={GlobalStyles.perroGatoReg}
-        ></Image>
+          style={GlobalStyles.perroGatoReg}></Image>
 
         <View style={GlobalStyles.contenedorGrisOscuro}>
             
@@ -58,7 +57,7 @@ const signUp = () => {
 
         </View>
 
-        <View style={{display:'flex'}}>
+        <View>
             <Pressable onPress={()=>{router.push('../login')}}>
                 <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio.</Text>
             </Pressable>

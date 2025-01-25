@@ -110,15 +110,13 @@ olvidarContra:{
     fontSize: RFValue(15),
     color: Colors.white,
     marginBottom: 20,
-    marginTop:10,
+    marginTop:15,
     fontFamily:'Poppins',
     textDecorationLine:"underline",
 },
 textRegistrar:{
     fontSize:  RFValue(16),
     color: Colors.blueText,
-    textAlign: "left", 
-    marginLeft: 10,  
     textDecorationLine:"underline",
     alignSelf:'center'
 
@@ -134,17 +132,18 @@ pataAbajo:{
     width: width * 0.13,
     height:height * 0.05,
     alignSelf:'flex-end',
-    marginRight: 14,
     marginBottom:10,
     transform:[{rotate: '45deg'}],
 },
 //PANTALLA DE Registro------------------------------------
 contenedorGrisOscuro:{
     backgroundColor:Colors.greyDark,
-    width: '100%',
     borderRadius: 30,
-    position:'absolute',
-    bottom:50,
+    flex: 1,
+    width: '100%',
+
+    top:50,
+    marginBottom:70,
 }, 
 tituloRegistro:{
     fontSize: 30,
@@ -152,6 +151,7 @@ tituloRegistro:{
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueDark,
+    textDecorationStyle:'double'
 
 },
 PetConnectRegistro:{
@@ -182,12 +182,14 @@ contenedorBotones:{
     flexDirection:'row',
     flexWrap: 'wrap',  
     columnGap: 60,
+    justifyContent:'space-between',
 },
 textoAccedeARefugio:{
     color:Colors.blueText, 
     fontSize: RFValue(16), 
     fontFamily:'Poppins',
     position:'relative',
+    top:670
 },
 //menu----------------------------------------
 textoSeccion:{
