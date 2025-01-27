@@ -50,14 +50,14 @@ botonGris:
 {
     backgroundColor: Colors.grey,
     color: Colors.white,
-    borderBottomColor: Colors.white,
+    borderColor: Colors.white,
     width:'auto',
     borderWidth: 4,
     height: 59 ,
     textAlign:'center',
     padding: 10,
     margin:10,
-    marginBottom:30,
+    
 },
 //PANTALLA DE LOGIN------------------------------------
 fondoBlancoLog:{
@@ -139,11 +139,8 @@ pataAbajo:{
 contenedorGrisOscuro:{
     backgroundColor:Colors.greyDark,
     borderRadius: 30,
-    flex: 1,
     width: '100%',
-
-    top:50,
-    marginBottom:70,
+    top:'20%',
 }, 
 tituloRegistro:{
     fontSize: 30,
@@ -180,16 +177,13 @@ perroGatoReg:{
 },
 contenedorBotones:{
     flexDirection:'row',
-    flexWrap: 'wrap',  
-    columnGap: 60,
+    flexWrap: 'wrap',
     justifyContent:'space-between',
 },
 textoAccedeARefugio:{
     color:Colors.blueText, 
-    fontSize: RFValue(16), 
+    fontSize: RFValue(15), 
     fontFamily:'Poppins',
-    position:'relative',
-    top:670
 },
 //menu----------------------------------------
 textoSeccion:{

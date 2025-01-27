@@ -6,7 +6,7 @@ import { router } from "expo-router";
 
 const signUp = () => {
   return (
-    <View style = {GlobalStyles.contenedorRegistro}>
+    <View style = {[GlobalStyles.contenedorRegistro, GlobalStyles.box]}>
         <View style={{height:100, width:'100%' , position:'absolute', top:13}}>
             <Image 
             source={require("../../assets/images/logo_2.png")}
@@ -18,52 +18,52 @@ const signUp = () => {
         <Text style={GlobalStyles.PetConnectRegistro}>Petconnect</Text>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={GlobalStyles.perroGatoReg}></Image>
+          style={GlobalStyles.perroGatoReg}>
+        </Image>
 
         <View style={GlobalStyles.contenedorGrisOscuro}>
-            
-            <Image 
-                source={require("../../assets/images/huellaBlanca.png")}
-                style={GlobalStyles.pataArriba}
-            ></Image>
-            <Text style= {GlobalStyles.textoUnirse}>¡Hazte parte del refugio!</Text>
-            <Image 
-                source={require("../../assets/images/huellaBlanca.png")}
-                style={GlobalStyles.pataAbajo}
-            ></Image>
+            <View style={{margin:20}}>
+                <Image 
+                    source={require("../../assets/images/huellaBlanca.png")}
+                    style={GlobalStyles.pataArriba}
+                ></Image>
+                <Text style= {GlobalStyles.textoUnirse}>¡Hazte parte del refugio!</Text>
+                <Image 
+                    source={require("../../assets/images/huellaBlanca.png")}
+                    style={GlobalStyles.pataAbajo}
+                ></Image>
 
-            <TextInput
-                style={GlobalStyles.input}
-                placeholder="Nombre"
-            />
-            <TextInput
-                style={GlobalStyles.input}
-                placeholder="Email"
-            />
-            <TextInput
-                style={GlobalStyles.input}
-                placeholder="Contraseña"
-            />
-            <TextInput
-                style={GlobalStyles.input}
-                placeholder="Repetir contraseña"
-            />    
+                <TextInput
+                    style={GlobalStyles.input}
+                    placeholder="Nombre"
+                />
+                <TextInput
+                    style={GlobalStyles.input}
+                    placeholder="Email"
+                />
+                <TextInput
+                    style={GlobalStyles.input}
+                    placeholder="Contraseña"
+                />
+                <TextInput
+                    style={GlobalStyles.input}
+                    placeholder="Repetir contraseña"
+                />    
 
-            <View style={GlobalStyles.contenedorBotones}>
-                <Boton label='Cancelar' backgroundColor='gris' link='../login'></Boton>
-                <Boton label='Registrate' backgroundColor='gris' link='../menu'></Boton>
+                <View style={GlobalStyles.contenedorBotones}>
+                    <Boton label='Cancelar' backgroundColor='gris' link='../login'></Boton>
+                    <Boton label='Registrate' backgroundColor='gris' link='../menu'></Boton>
+                </View>
             </View>
 
-
         </View>
-
-        <View>
+        <View style={{position:'relative', top:200}}>
             <Pressable onPress={()=>{router.push('../login')}}>
                 <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio.</Text>
             </Pressable>
+
         </View>
         
-
     </View> 
     )
 }
