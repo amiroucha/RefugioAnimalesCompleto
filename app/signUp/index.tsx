@@ -14,7 +14,7 @@ const signUp = () => {
             ></Image>
         </View>
 
-        <Text style={GlobalStyles.tituloRegistro}>Registate en</Text>
+        <Text style={GlobalStyles.tituloRegistro}>Regístrate en</Text>
         <Text style={GlobalStyles.PetConnectRegistro}>Petconnect</Text>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
@@ -52,12 +52,12 @@ const signUp = () => {
 
                 <View style={GlobalStyles.contenedorBotones}>
                     <Boton label='Cancelar' backgroundColor='gris' link='../login'></Boton>
-                    <Boton label='Registrate' backgroundColor='gris' link='../menu'></Boton>
+                    <Boton label='Regístrate' backgroundColor='gris' link='../menu'></Boton>
                 </View>
             </View>
 
         </View>
-        <View style={{position:'relative', top:200}}>
+        <View style={{position:'relative', top:180}}>
             <Pressable onPress={()=>{router.push('../login')}}>
                 <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio.</Text>
             </Pressable>

@@ -55,9 +55,6 @@ botonGris:
     borderWidth: 4,
     height: 59 ,
     textAlign:'center',
-    padding: 10,
-    margin:10,
-    
 },
 //PANTALLA DE LOGIN------------------------------------
 fondoBlancoLog:{
@@ -143,7 +140,7 @@ contenedorGrisOscuro:{
     top:'20%',
 }, 
 tituloRegistro:{
-    fontSize: 30,
+    fontSize: RFValue(16),
     top: 60,
     textAlign: "center",
     fontFamily:'Poppins',
@@ -153,7 +150,7 @@ tituloRegistro:{
 },
 PetConnectRegistro:{
     textAlign: "center",
-    fontSize: 50,
+    fontSize: RFValue(45),
     fontFamily:'WendyOne',
     color: Colors.blueDark,
     marginBottom: 20,
@@ -169,13 +166,14 @@ textoUnirse:{
 
 },
 perroGatoReg:{
-    width: 250, 
-    height:210, 
+    width: width * 0.64, 
+    height: height * 0.23,
     position:'absolute', 
     alignSelf:'center',    
     top: 150,
 },
 contenedorBotones:{
+    display:'flex',
     flexDirection:'row',
     flexWrap: 'wrap',
     justifyContent:'space-between',
