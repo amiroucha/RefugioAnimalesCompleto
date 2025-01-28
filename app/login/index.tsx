@@ -47,7 +47,7 @@ const login = () => {
               style={GlobalStyles.input}
               placeholder="Contraseña"/>
 
-            <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-between', width:'100%'}}>
+            <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-between', width:'100%', alignItems:'center'}}>
               <Pressable onPress={()=>{router.push('../signUp')}}>
                     <Text style={[GlobalStyles.textRegistrar]}>Regístrate aquí</Text>
               </Pressable>

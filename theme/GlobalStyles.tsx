@@ -115,8 +115,6 @@ textRegistrar:{
     fontSize:  RFValue(16),
     color: Colors.blueText,
     textDecorationLine:"underline",
-    alignSelf:'center'
-
 },
 //patas-------------------------------------------------------
 pataArriba:{
