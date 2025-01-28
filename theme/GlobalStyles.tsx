@@ -138,7 +138,7 @@ contenedorGrisOscuro:{
     borderRadius: 30,
     width: '100%',
     top:'20%',
-}, 
+},
 tituloRegistro:{
     fontSize: RFValue(16),
     top: 60,
@@ -159,7 +159,7 @@ PetConnectRegistro:{
 
 textoUnirse:{
     color: Colors.white,
-    fontSize: 29,
+    fontSize: RFValue(24),
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
@@ -182,6 +182,7 @@ textoAccedeARefugio:{
     color:Colors.blueText, 
     fontSize: RFValue(15), 
     fontFamily:'Poppins',
+    textDecorationLine:"underline",
 },
 //menu----------------------------------------
 textoSeccion:{
