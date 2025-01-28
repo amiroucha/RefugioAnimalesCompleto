@@ -140,7 +140,7 @@ contenedorGrisOscuro:{
     top:'20%',
 },
 tituloRegistro:{
-    fontSize: RFValue(16),
+    fontSize: RFValue(20),
     top: 60,
     textAlign: "center",
     fontFamily:'Poppins',
