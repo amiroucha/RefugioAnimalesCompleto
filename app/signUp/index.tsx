@@ -15,7 +15,7 @@ const signUp = () => {
         </View>
 
         <Text style={GlobalStyles.tituloRegistro}>Regístrate en</Text>
-        <Text style={GlobalStyles.PetConnectRegistro}>Petconnect</Text>
+        <Text style={GlobalStyles.PetConnectRegistro}>PetConnect</Text>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
           style={GlobalStyles.perroGatoReg}>
