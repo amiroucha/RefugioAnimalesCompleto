@@ -41,6 +41,13 @@ drawerUserImg: {
     alignSelf:'center', 
     borderRadius: 50
 },
+headerStyle:{
+    display:'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent:'space-between',
+    width:'100%'
+},
 //botones -------------------------------------------
 boton:{
     width: 150,
@@ -200,6 +207,11 @@ textoAccedeARefugio:{
     textDecorationLine:"underline",
 },
 //menu----------------------------------------
+tituloMenu:{
+    color:'white',
+    fontSize:RFValue(30),
+    fontFamily: 'WendyOne'
+},
 textoSeccion:{
     color: Colors.blueText,
     fontFamily:'Poppins',
@@ -221,13 +233,13 @@ imagenesMenu:{
     margin:10,
 },
 //comunidad animal-----------------------------------------------
-titulocomunidad:{
-    fontSize: RFValue(22), 
+tituloComunidad:{
+    fontSize: RFValue(21), 
     fontFamily:'Poppins',
     color: Colors.white,
     fontWeight:'bold', 
     position: 'relative',
-    alignSelf:'center'
+    alignSelf:'center',
 },
 cajaNaranja:{
     backgroundColor: Colors.orangeContainer,
@@ -315,6 +327,14 @@ input2Rescate:{
 
 },
 //refugio de patitas...............................
+tituloRefugio:{
+    fontSize: RFValue(21), 
+    fontFamily:'Poppins',
+    color: Colors.white,
+    fontWeight:'bold', 
+    position: 'relative',
+    alignSelf:'center',
+},
 primerTexto:{
     padding: 10,
     borderRadius:30,
@@ -350,6 +370,14 @@ nombrePerro:{
 },
 
 //perros----------------------------------
+tituloPerros:{
+    fontSize: RFValue(21), 
+    fontFamily:'Poppins',
+    color: Colors.white,
+    fontWeight:'bold', 
+    position: 'relative',
+    alignSelf:'center',
+},
 nombreUbica:{
     //contenedor del nombre y la ubicacion
     flexDirection: 'row',

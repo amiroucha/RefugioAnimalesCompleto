@@ -13,11 +13,6 @@ const menu = () => {
     const navigation = useNavigation();
     return (
         <View style={GlobalStyles.contenedor}>
-            <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-around', alignItems:'center', width:'100%'}}>      
-                <Text style={{color:'white', fontSize:RFValue(30), fontFamily: 'WendyOne'}}>Petconnect</Text>
-                <Ionicons name="notifications-outline" size={50} color="white"/>
-            </View>
-            
 
             <View style={{backgroundColor:'white', width:'95%', borderRadius:30}}>
 

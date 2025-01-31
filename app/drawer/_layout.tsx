@@ -27,7 +27,21 @@ const LayoutDrawer = () => {
       options={{
         drawerLabel: 'Inicio',
         title: 'Pantalla inicio',
-        drawerIcon: ({size, color}) => <Ionicons name="home" size={size} color={color}/>
+        drawerIcon: ({ size, color }) => (
+          <Ionicons name="film" size={size} color={color} />
+        ),
+        headerTitle: () => (
+          <View style={GlobalStyles.headerStyle}>
+           <Text style={GlobalStyles.tituloMenu}>PetConnect</Text>
+            <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: Colors.blueDark,
+          height: RFValue(50),
+          
+        },
+        headerTintColor: Colors.white,
       }}
     />
     
@@ -36,7 +50,21 @@ const LayoutDrawer = () => {
       options={{
         drawerLabel: 'Refugio',
         title: 'Listado de peliculas',
-        drawerIcon: ({size, color}) => <Ionicons name="film" size={size} color={color}/>
+        drawerIcon: ({ size, color }) => (
+          <Ionicons name="film" size={size} color={color} />
+        ),
+        headerTitle: () => (
+          <View style={GlobalStyles.headerStyle}>
+           <Text style={GlobalStyles.tituloRefugio}>REFUGIO DE PATITAS</Text>
+            <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: Colors.blueDark,
+          height: RFValue(50),
+          
+        },
+        headerTintColor: Colors.white,
       }}
     />
 
@@ -45,7 +73,21 @@ const LayoutDrawer = () => {
       options={{
         drawerLabel: 'Comunidad',
         title: 'Listado de peliculas',
-        drawerIcon: ({size, color}) => <Ionicons name="film" size={size} color={color}/>
+        drawerIcon: ({ size, color }) => (
+          <Ionicons name="film" size={size} color={color} />
+        ),
+        headerTitle: () => (
+          <View style={GlobalStyles.headerStyle}>
+           <Text style={GlobalStyles.tituloComunidad} adjustsFontSizeToFit={true} minimumFontScale={0.5} >COMUNIDAD ANIMAL</Text>
+            <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: Colors.blueDark,
+          height: RFValue(50),
+          
+        },
+        headerTintColor: Colors.white,
       }}
     />
 
@@ -58,8 +100,8 @@ const LayoutDrawer = () => {
         <Ionicons name="film" size={size} color={color} />
       ),
       headerTitle: () => (
-        <View style={{ display:'flex', flexDirection: 'row', alignItems: 'center', justifyContent:'space-between', width:'100%'}}>
-          <Text style={GlobalStyles.titulocomunidad}>PATITAS AL RESCATE</Text>
+        <View style={GlobalStyles.headerStyle}>
+          <Text style={GlobalStyles.tituloComunidad}>PATITAS AL RESCATE</Text>
           <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
         </View>
       ),
@@ -78,7 +120,22 @@ const LayoutDrawer = () => {
       options={{
         drawerLabel: 'Perros',
         title: 'Listado de peliculas',
-        drawerIcon: ({size, color}) => <Ionicons name="film" size={size} color={color}/>
+        drawerIcon: ({ size, color }) => (
+          <Ionicons name="film" size={size} color={color} />
+        ),
+        headerTitle: () => (
+          <View style={GlobalStyles.headerStyle}>
+            <Text style={GlobalStyles.tituloPerros}>PERROS</Text>
+            <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: Colors.blueDark,
+          height: RFValue(50),
+          
+        },
+        headerTintColor: Colors.white,
+        
       }}
     />
 

@@ -10,14 +10,7 @@ import Boton from '../../../../components/Boton';
 const perros = () => {
     return (
         <View style={GlobalStyles.contenedor}>
-            <View style={{flexDirection: 'row', alignItems:'center'}}>
-                <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>PERROS</Text>
-                <Image 
-                    source={require("../../../../assets/images/logo_2.png")}
-                    style={{width: 50, height:50, position:'relative', right:15}}
-                ></Image>
-            </View>
+            
             <View style={{backgroundColor:'white', borderRadius:30, width:'90%'}}>
                 <Image 
                     source={require("../../../../assets/images/Pluto.png")}

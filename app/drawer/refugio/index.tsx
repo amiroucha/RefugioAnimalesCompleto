@@ -8,14 +8,7 @@ import { router } from "expo-router";
 const refugio = () => {
     return (
         <View style={GlobalStyles.contenedor}>
-            <View style={{flexDirection: 'row', alignItems:'center'}}>
-                <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>REFUGIO DE PATITAS</Text>
-                <Image 
-                    source={require("../../../assets/images/logo_2.png")}
-                    style={{width: 50, height:50, position:'relative', right:15}}
-                ></Image>
-            </View>
+            
             <View style={GlobalStyles.cajaNaranja}>
                 <Text style={[GlobalStyles.primerTexto , {fontWeight:'bold'} ]}>Adoptar es un compromiso paratoda la vida, piénsalo bien antes dedar el paso.</Text>
                 <Text style={GlobalStyles.primerTexto}> Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text>
