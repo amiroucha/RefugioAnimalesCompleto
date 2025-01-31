@@ -9,15 +9,7 @@ const comunidad = () => {
     return (
         <View style={GlobalStyles.contenedor}>
             
-            <View style={{flexDirection: 'row', alignItems:'center'}}>
-
-                <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>PATITAS AL RESCATE</Text>
-                <Image 
-                    source={require("../../../assets/images/logo_2.png")}
-                    style={{width: 50, height:50, position:'relative', right:15}}
-                ></Image>
-            </View>
+        
 
             <View style={GlobalStyles.cajaAzul}>
                 <Text style={GlobalStyles.textoInicioUbi}>

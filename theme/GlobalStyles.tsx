@@ -222,11 +222,10 @@ imagenesMenu:{
 },
 //comunidad animal-----------------------------------------------
 titulocomunidad:{
-    fontSize: 27, 
+    fontSize: RFValue(22), 
     fontFamily:'Poppins',
     color: Colors.white,
     fontWeight:'bold', 
-    margin: 20,
     position: 'relative',
     alignSelf:'center'
 },
