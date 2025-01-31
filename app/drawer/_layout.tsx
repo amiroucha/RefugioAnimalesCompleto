@@ -1,11 +1,12 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
 import { Colors } from "@/theme/Colors";
 import { Drawer } from 'expo-router/drawer';
-import { Ionicons} from '@expo/vector-icons'
+import { FontAwesome, Ionicons} from '@expo/vector-icons'
 import React from 'react';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { View, Text, Image } from 'react-native';
 import CustomDrawer from '@/components/CustomDrawer';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 const LayoutDrawer = () => {
   return (
@@ -118,9 +119,9 @@ const LayoutDrawer = () => {
       name="refugio/perros/index" 
       options={{
         drawerLabel: 'Perros',
-        title: 'Listado de peliculas',
+        title: 'PERROS',
         drawerIcon: ({ size, color }) => (
-          <Ionicons name="film" size={size} color={color} />
+          <FontAwesome5 name="dog" size={size} color={color} />
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
