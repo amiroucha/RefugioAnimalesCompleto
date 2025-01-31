@@ -1,5 +1,5 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image, Pressable, TextInput, Alert} from 'react-native';
+import { View, Text, Image, Pressable, TextInput, Alert, ScrollView} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
 import Boton from '../../../../components/Boton';
@@ -10,6 +10,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 const perros = () => {
     return (
+        <ScrollView contentContainerStyle={{ flex: 1 }}>
         <View style={GlobalStyles.contenedor}>
             
             <View style={{backgroundColor:'white', borderRadius:30, width:'90%'}}>
@@ -76,7 +77,7 @@ const perros = () => {
             </View>
             
         </View>
-        
+        </ScrollView>
     )}
 
 
