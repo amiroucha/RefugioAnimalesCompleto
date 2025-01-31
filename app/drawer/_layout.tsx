@@ -14,7 +14,7 @@ const LayoutDrawer = () => {
         screenOptions={{
             overlayColor: 'rgba(0,0,0,0.4)',
             drawerInactiveTintColor: 'black',
-            drawerActiveBackgroundColor: 'indigo',
+            drawerActiveBackgroundColor: '#366288',
             drawerActiveTintColor: 'white',
             drawerItemStyle: {
                 borderRadius: 10

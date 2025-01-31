@@ -10,6 +10,7 @@ const CustomDrawer = ( props: DrawerContentComponentProps) => {
         <Image style={GlobalStyles.drawerUserImg}
                 source={require('../assets/user.jpg')}
         />
+        <Text style={GlobalStyles.userName}>Lorenzo20</Text> 
       </View>
 
       <DrawerItemList {...props}/>

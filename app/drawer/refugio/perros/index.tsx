@@ -3,6 +3,7 @@ import { View, Text, Image, Pressable, TextInput} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
 import Boton from '../../../../components/Boton';
+import { RFValue } from "react-native-responsive-fontsize";
 
 
 
@@ -12,9 +13,11 @@ const perros = () => {
         <View style={GlobalStyles.contenedor}>
             
             <View style={{backgroundColor:'white', borderRadius:30, width:'90%'}}>
+                
+                <View style={{justifyContent:'space-between', margin:10}}>
                 <Image 
                     source={require("../../../../assets/images/Pluto.png")}
-                    style={{width: 300, height:300, borderRadius:30, alignSelf:'center', margin:10,}}
+                    style={GlobalStyles.imagenPerroPluto}
                 ></Image>
 
                 <View style={GlobalStyles.nombreUbica}>
@@ -22,12 +25,12 @@ const perros = () => {
                     <Ionicons name="heart-circle" color="blue" size={45} style={GlobalStyles.iconoCorazon}/>
                 </View>
                 
-                <View style={{flexDirection: 'row',columnGap:5,}}>
+                <View style={{flexDirection: 'row',}}>
                     <Ionicons name="location" size={30} style={GlobalStyles.iconoUbi}/>
-                    <Text style={{position:'relative', }}>Murcia</Text>
+                    <Text style={{fontSize:RFValue(16)}}>Murcia</Text>
                 </View>
 
-               <View style={{flexDirection: 'row',}}>
+               <View style={{flexDirection: 'row', justifyContent:'space-between'}}>
                     <View style={GlobalStyles.cajaNaranjaPerro}>
                         <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Sexo</Text>
                         <Text style={[GlobalStyles.datosPerro ,{fontSize: 17,}]}>Macho</Text>
@@ -37,7 +40,7 @@ const perros = () => {
                         <Text style={[GlobalStyles.datosPerro ,{fontSize: 17,}]}>1.5 años</Text>
                     </View>
                     <View style={GlobalStyles.cajaNaranjaPerro}>
-                        <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Tipos</Text>
+                        <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Tipo</Text>
                         <Text style={[GlobalStyles.datosPerro ,{fontSize: 17,}]}>Bodeguero</Text>
                     </View>
                </View>
@@ -64,7 +67,12 @@ const perros = () => {
                     </Text>
                </View>
             </View>
-            <Boton label='Dame un hogar' backgroundColor='naranja' link='../../menu'></Boton>
+                </View>
+               
+            <View style={{width:"90%", marginTop:10}}>
+                <Boton label='Dame un hogar' backgroundColor='naranja' link='../../drawer'></Boton>
+            </View>
+            
         </View>
         
     )}

@@ -49,7 +49,7 @@ const refugio = () => {
                 <TextInput style={GlobalStyles.inputRefugio} placeholder="Búsqueda por nombre..." placeholderTextColor={Colors.blueDark}/>
 
                 <View style={GlobalStyles.viewAnimales}>
-                    <Pressable onPress={()=>{router.push('../refugio/perros')}}>
+                    <Pressable onPress={()=>{router.push('./refugio/perros')}}>
                         <View style={GlobalStyles.contenedorAnimales}>
                             <Image 
                                 source={require("../../../assets/images/Pluto.png")}

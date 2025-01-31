@@ -26,14 +26,15 @@ contenedorRegistro:{
 },
 //Drawer-----------------------------------------------------------------
 drawerUserContainer: {
-    backgroundColor: 'indigo',
+    backgroundColor: Colors.blueDark,
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 0,
     marginBottom: 30,
     height: 140,
     borderRadius: 10,
-
+    flexDirection: 'row',
+    columnGap: 30,
 },
 drawerUserImg: {
     width: 100, 
@@ -55,6 +56,11 @@ tituloHeader:{
     fontWeight:'bold', 
     position: 'relative',
     alignSelf:'center',
+},
+userName:{
+    color: Colors.white,
+    fontFamily: 'Poppins',
+    fontSize: 19,
 },
 //botones -------------------------------------------
 boton:{
@@ -278,34 +284,48 @@ cajaNaranja:{
     borderRadius:30,
     width:'90%',
     marginBottom: 20,
+    paddingTop:10,
+    alignItems:'center'
 },
 cajaBlanca:{
     backgroundColor: Colors.white,
     borderRadius:30,
     width:'90%',
     flexDirection:'column',
+    paddingBottom:10,
 },
 titulos:{
     fontFamily:'Poppins',
-    fontSize:22,
+    fontSize:RFValue(18),
     fontWeight:'bold', 
     color: Colors.blueText,
     padding:10,
     paddingBottom: 0,
+    marginTop:10,
+    marginBottom:10
 },
 parrafoPatitas:{
-    fontSize: 17,
+    fontSize: RFValue(14),
     fontFamily: 'Poppins',
     textAlign:'justify',
     padding: 10,
-    color: Colors.blueText,
+    color: Colors.black,
 },
-textosTemas:{
+viewAzulDiscusion:{
+    display:'flex',
     backgroundColor: Colors.blueLight,
     padding: 20,
     borderRadius:30,
-    margin: 10, 
-    fontSize: 18,
+    marginLeft: 15,
+    marginRight:20, 
+    marginBottom:10,
+    width:'90%',
+    height:100,
+    flexDirection:'column',
+    paddingBottom:10,
+},
+textosTemas:{
+    fontSize: RFValue(15),
     fontFamily: 'Poppins',
     fontWeight:'bold', 
     textAlign:'justify',
@@ -313,7 +333,7 @@ textosTemas:{
 },
 iconos:{
     color: Colors.blueText,
-    fontSize: 25,
+    fontSize: RFValue(16),
     //no he podido poner los iconos a la izquierda
 },
 //patitas al rescate-----------------------------------------------
@@ -462,36 +482,40 @@ nombrePerro:{
 },
 
 //perros----------------------------------
+imagenPerroPluto:{
+    width: 320,
+    height:280,
+    borderRadius:30,
+    alignSelf:'center',
+    margin:10,
+},
 nombreUbica:{
     //contenedor del nombre y la ubicacion
     flexDirection: 'row',
     columnGap: 230,
     margin:10,
-
-
+    fontFamily: 'Poppins',
 },
 iconoUbi:{
     color: Colors.blueText,
 },
 iconoCorazon:{
-    color: Colors.blueText,
-    top: -9,
-    position:'absolute',
-    right: 15,
+    color: Colors.blueText
 },
 nombrePluto:{
     fontFamily: 'Poppins',
     color: Colors.blueText,
     fontWeight:'bold',
-    fontSize: 20,
+    fontSize: RFValue(20),
 },
 cajaNaranjaPerro:{
     backgroundColor: Colors.orangeContainer,
-    borderRadius:30,
+    borderRadius:20,
     width: 110,
     height: 55,
     alignItems:'center',
-    margin: 3,
+    justifyContent:'space-between',
+    margin:1
 },
 datosPerro:{
     fontFamily: 'Poppins',
@@ -500,12 +524,15 @@ datosPerro:{
 },
 perfilAna:{
     flexDirection:'row',
+    justifyContent:'space-between',
 },
 cajaAzulperros:
 {
     backgroundColor: Colors.blueLight,
-    borderRadius:30,
-    margin: 5,
+    borderRadius:25,
+    marginBottom: 10,
+    marginTop:10,
+    justifyContent:'space-around'
 },
 nombreAna:{
     fontFamily: 'Poppins',
@@ -517,7 +544,8 @@ iconoPerros:{
     backgroundColor: Colors.orangeContainer,
     borderRadius: 60,
     padding: 5,
-    height: 45,
+    height: 40,
+    alignSelf:'center'
 
 },
 
