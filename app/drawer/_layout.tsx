@@ -28,7 +28,7 @@ const LayoutDrawer = () => {
         drawerLabel: 'Inicio',
         title: 'Pantalla inicio',
         drawerIcon: ({ size, color }) => (
-          <Ionicons name="film" size={size} color={color} />
+          <Ionicons name="home" size={size} color={color} />
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
@@ -51,7 +51,7 @@ const LayoutDrawer = () => {
         drawerLabel: 'Refugio',
         title: 'Listado de peliculas',
         drawerIcon: ({ size, color }) => (
-          <Ionicons name="film" size={size} color={color} />
+          <Ionicons name="paw" size={size} color={color} />
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
@@ -74,7 +74,7 @@ const LayoutDrawer = () => {
         drawerLabel: 'Comunidad',
         title: 'Listado de peliculas',
         drawerIcon: ({ size, color }) => (
-          <Ionicons name="film" size={size} color={color} />
+          <Ionicons name="people" size={size} color={color} />
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
@@ -97,7 +97,7 @@ const LayoutDrawer = () => {
       drawerLabel: 'Patitas al Rescate',
       title: 'PATITAS AL RESCATE',
       drawerIcon: ({ size, color }) => (
-        <Ionicons name="film" size={size} color={color} />
+        <Ionicons name="shield" size={size} color={color} />
       ),
       headerTitle: () => (
         <View style={GlobalStyles.headerStyle}>
