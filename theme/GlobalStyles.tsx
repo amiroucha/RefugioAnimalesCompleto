@@ -389,7 +389,26 @@ buttonStyle:{
 primerTexto:{
     padding: 10,
     borderRadius:30,
+    fontSize:RFValue(15),
     fontFamily: 'Poppins',
+    color: Colors.blueDark,
+    fontWeight:'normal',
+    textAlign:'justify',
+    marginLeft:10,
+    marginRight:10
+},
+imagenCategoriaStyle:{
+    width: 90,
+    height:90,
+    borderRadius:20
+},
+viewCategorias:{
+    display:'flex',
+    backgroundColor: Colors.white,
+    padding: 10,
+    borderRadius:30,
+    width:'90%',
+    marginBottom:15,
 },
 titulo2Refu:{
     color: Colors.blueDark,
@@ -404,20 +423,42 @@ inputRefugio:{
     borderRadius:30,
     width: '90%',
     fontFamily: 'Poppins',
+    marginBottom:15,
+    fontSize:RFValue(14)
+},
+viewAnimales:{  
+    display:'flex',
+    backgroundColor: Colors.white,
+    width:'90%',
+    borderRadius:30, 
+    flexDirection: "row",
+    flexWrap:'wrap',
+    justifyContent:'space-between',
+    marginBottom:10
 },
 contenedorAnimales:{
     backgroundColor: Colors.orangeContainer,
     borderRadius:30,
-    width: 170,
+    width: 155,
     alignItems:'center',
-    marginBottom: 10,
+    marginTop: 10,
+    marginLeft:10,
+    marginRight:10,
+    marginBottom:10
+},
+imagenPerros:{
+    width: width * 0.35,
+    height: height * 0.16,
+    borderRadius:20,
+    marginTop:7
 },
 nombrePerro:{
     fontFamily: 'Poppins',
     color: Colors.blueText,
     fontWeight:'bold',
     alignSelf:'flex-start',
-    paddingLeft: 20,
+    paddingLeft: 15,
+    fontSize:RFValue(14),
 },
 
 //perros----------------------------------
