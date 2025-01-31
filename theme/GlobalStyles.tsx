@@ -48,6 +48,14 @@ headerStyle:{
     justifyContent:'space-between',
     width:'100%'
 },
+tituloHeader:{
+    fontSize: RFValue(21), 
+    fontFamily:'Poppins',
+    color: Colors.white,
+    fontWeight:'bold', 
+    position: 'relative',
+    alignSelf:'center',
+},
 //botones -------------------------------------------
 boton:{
     width: 150,
@@ -207,40 +215,64 @@ textoAccedeARefugio:{
     textDecorationLine:"underline",
 },
 //menu----------------------------------------
+cajaBlancaMenu:{
+    backgroundColor: Colors.white,
+    width:'92%',
+    borderRadius:30,
+    paddingBottom:10,
+    paddingTop:20
+},
+margenSecciones:{
+    margin:10,
+    marginLeft:10
+},
 tituloMenu:{
-    color:'white',
+    color: Colors.white,
     fontSize:RFValue(30),
     fontFamily: 'WendyOne'
 },
 textoSeccion:{
     color: Colors.blueText,
     fontFamily:'Poppins',
-    fontSize: 30,
+    fontSize: RFValue(25),
     textAlign:'left',
-    margin: 20,
+    fontWeight: 'bold',
+    marginLeft:20,
+    
+},
+textoProtectoras:{
+    fontFamily: 'Poppins',
+    color:'white',
+    fontSize:RFValue(17),
+    fontWeight:'bold',
+    alignSelf:'center',
+    marginBottom:10,
+    marginTop:10
 },
 seccionesMenu:{
     color: Colors.blueText,
     fontFamily:'Poppins',
     textDecorationLine:'underline',
-    fontSize: 25,
-    //he puesto el margen para que parezca centrado pero no se como centrarlo con las imagenes
-    marginBottom: 46,
+    fontSize: RFValue(20),
+    fontWeight:'bold'
 },
 imagenesMenu:{
-    width:60,
-    height:60,
+    width:64,
+    height:64,
     margin:10,
+    borderRadius:10,
+},
+seccionesStyle:{
+    display:'flex',
+    flexDirection:'row',
+    alignItems:'center'
+},
+imagenesProtectoras:{
+    width:150,
+    height:150,
+    borderRadius:10
 },
 //comunidad animal-----------------------------------------------
-tituloComunidad:{
-    fontSize: RFValue(21), 
-    fontFamily:'Poppins',
-    color: Colors.white,
-    fontWeight:'bold', 
-    position: 'relative',
-    alignSelf:'center',
-},
 cajaNaranja:{
     backgroundColor: Colors.orangeContainer,
     borderRadius:30,
@@ -327,14 +359,6 @@ input2Rescate:{
 
 },
 //refugio de patitas...............................
-tituloRefugio:{
-    fontSize: RFValue(21), 
-    fontFamily:'Poppins',
-    color: Colors.white,
-    fontWeight:'bold', 
-    position: 'relative',
-    alignSelf:'center',
-},
 primerTexto:{
     padding: 10,
     borderRadius:30,
@@ -370,14 +394,6 @@ nombrePerro:{
 },
 
 //perros----------------------------------
-tituloPerros:{
-    fontSize: RFValue(21), 
-    fontFamily:'Poppins',
-    color: Colors.white,
-    fontWeight:'bold', 
-    position: 'relative',
-    alignSelf:'center',
-},
 nombreUbica:{
     //contenedor del nombre y la ubicacion
     flexDirection: 'row',

@@ -55,7 +55,7 @@ const LayoutDrawer = () => {
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
-           <Text style={GlobalStyles.tituloRefugio}>REFUGIO DE PATITAS</Text>
+           <Text style={GlobalStyles.tituloHeader}>REFUGIO DE PATITAS</Text>
             <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
           </View>
         ),
@@ -78,7 +78,7 @@ const LayoutDrawer = () => {
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
-           <Text style={GlobalStyles.tituloComunidad} adjustsFontSizeToFit={true} minimumFontScale={0.5} >COMUNIDAD ANIMAL</Text>
+           <Text style={GlobalStyles.tituloHeader} adjustsFontSizeToFit={true} minimumFontScale={0.5} >COMUNIDAD ANIMAL</Text>
             <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
           </View>
         ),
@@ -101,14 +101,13 @@ const LayoutDrawer = () => {
       ),
       headerTitle: () => (
         <View style={GlobalStyles.headerStyle}>
-          <Text style={GlobalStyles.tituloComunidad}>PATITAS AL RESCATE</Text>
+          <Text style={GlobalStyles.tituloHeader}>PATITAS AL RESCATE</Text>
           <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
         </View>
       ),
       headerStyle: {
         backgroundColor: Colors.blueDark,
         height: RFValue(50),
-        
       },
       headerTintColor: Colors.white,
       
@@ -125,7 +124,7 @@ const LayoutDrawer = () => {
         ),
         headerTitle: () => (
           <View style={GlobalStyles.headerStyle}>
-            <Text style={GlobalStyles.tituloPerros}>PERROS</Text>
+            <Text style={GlobalStyles.tituloHeader}>PERROS</Text>
             <Image source={require('../../assets/images/logo_2.png')} style={{ width: RFValue(35), height:RFValue(35)}}/>
           </View>
         ),
