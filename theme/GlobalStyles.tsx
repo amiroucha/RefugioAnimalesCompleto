@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Colors } from "./Colors";
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { reloadAppAsync } from "expo";
-import { Dimensions } from 'react-native';
+import { Dimensions, TextInput, Text } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -217,7 +217,7 @@ textoAccedeARefugio:{
 //menu----------------------------------------
 cajaBlancaMenu:{
     backgroundColor: Colors.white,
-    width:'92%',
+    width:'90%',
     borderRadius:30,
     paddingBottom:10,
     paddingTop:20
@@ -320,43 +320,70 @@ iconos:{
 cajaAzul:{
     backgroundColor: Colors.blueLight,
     borderRadius:30,
-    marginLeft: 15,
-    marginRight: 15,
-
+    width:'90%',
+    paddingLeft:10,
+    paddingRight:10,
+    paddingBottom:5
 },
 textoInicioUbi:{
     color: Colors.blueText,
     fontFamily: 'Poppins',
-    fontSize: 16,
-    padding:15,
+    fontSize: RFValue(14),
     fontWeight: 'bold',
-    marginLeft: 15,
+    textAlign:'justify',
+    marginBottom:10
 },
 textoinfoUbi:{
-    backgroundColor:'white', 
-    padding:14, 
+    backgroundColor: Colors.white, 
+    paddingLeft:20,
+    paddingRight:20,
     borderRadius: 30,
+    padding:10,
     color: Colors.blueText,
     fontFamily: 'Poppins',
-    fontSize: 16,
-    margin:15,
+    fontSize: RFValue(14),
 },
 inputRescate:{
     backgroundColor: Colors.white,
     borderRadius: 30,
-    margin: 15,
-    marginBottom: 0,
-    marginLeft: 15,
+    padding: 10,
+    fontSize: RFValue(14),
+    marginBottom: 10,
+    height: height * 0.06,
+    fontFamily: 'Poppins',
     color: Colors.blueText,
 },
 input2Rescate:{
     backgroundColor: Colors.white,
     borderRadius: 30,
-    margin: 15,
     color: Colors.blueText,
-    width:'85%',
-    height:  80,
-
+    height: height * 0.1,
+    width:'100%',
+    fontSize: RFValue(14),
+    textAlignVertical:'top',
+    fontFamily: 'Poppins',
+    padding:10,
+    paddingLeft:20,
+    marginTop:10
+},
+imagenRescateStyle:{
+    width: width * 0.8,
+    height: height * 0.35,
+    position:'relative', 
+    alignSelf:'center',
+    borderRadius:30,
+    marginBottom:15,
+    fontSize: RFValue(16),
+    fontFamily: 'Poppins',
+    borderColor:Colors.blueDark,
+    borderWidth:1
+    
+},
+buttonStyle:{
+    width:'100%',
+    alignSelf:'flex-end',
+    paddingTop:RFValue(10),
+    fontFamily: 'Poppins',
 },
 //refugio de patitas...............................
 primerTexto:{
