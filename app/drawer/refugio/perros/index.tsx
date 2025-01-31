@@ -2,7 +2,7 @@ import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image, Pressable, TextInput} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
-import Boton from '../../components/Boton';
+import Boton from '../../../../components/Boton';
 
 
 
@@ -14,13 +14,13 @@ const perros = () => {
                 <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
                 <Text style={GlobalStyles.titulocomunidad}>PERROS</Text>
                 <Image 
-                    source={require("../../../assets/images/logo_2.png")}
+                    source={require("../../../../assets/images/logo_2.png")}
                     style={{width: 50, height:50, position:'relative', right:15}}
                 ></Image>
             </View>
             <View style={{backgroundColor:'white', borderRadius:30, width:'90%'}}>
                 <Image 
-                    source={require("../../../assets/images/Pluto.png")}
+                    source={require("../../../../assets/images/Pluto.png")}
                     style={{width: 300, height:300, borderRadius:30, alignSelf:'center', margin:10,}}
                 ></Image>
 
@@ -52,7 +52,7 @@ const perros = () => {
                <View style={GlobalStyles.cajaAzulperros}>
                     <View style={GlobalStyles.perfilAna}>
                         <Image 
-                            source={require("../../../assets/images/Eros.png")}
+                            source={require("../../../../assets/images/Eros.png")}
                             style={{width: 60, height:60, borderRadius:30, borderWidth: 2, alignSelf:'center', margin:10,}}
                         ></Image>
                         <View style={{flexDirection:'column',}}>

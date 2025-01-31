@@ -24,6 +24,23 @@ contenedorRegistro:{
     flex: 1,
     flexDirection: 'column',
 },
+//Drawer-----------------------------------------------------------------
+drawerUserContainer: {
+    backgroundColor: 'indigo',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 0,
+    marginBottom: 30,
+    height: 140,
+    borderRadius: 10,
+
+},
+drawerUserImg: {
+    width: 100, 
+    height: 100, 
+    alignSelf:'center', 
+    borderRadius: 50
+},
 //botones -------------------------------------------
 boton:{
     width: 150,

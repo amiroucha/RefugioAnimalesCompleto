@@ -1,6 +1,6 @@
 import { View, Text, TextInput, Pressable, Image } from 'react-native';
 import { GlobalStyles } from '../../theme/GlobalStyles';
-import Boton from '../components/Boton';
+import Boton from '../../components/Boton';
 import { router } from "expo-router";
 
 
@@ -52,7 +52,7 @@ const signUp = () => {
 
                 <View style={GlobalStyles.contenedorBotones}>
                     <Boton label='Cancelar' backgroundColor='gris' link='../login'></Boton>
-                    <Boton label='Regístrate' backgroundColor='gris' link='../menu'></Boton>
+                    <Boton label='Regístrate' backgroundColor='gris' link='../drawer'></Boton>
                 </View>
             </View>
 

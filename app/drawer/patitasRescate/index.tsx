@@ -1,6 +1,6 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image, StyleSheet, TextInput } from 'react-native';
-import Boton from "../components/Boton";
+import Boton from "../../../components/Boton";
 import { Ionicons } from '@expo/vector-icons';
 
 
@@ -14,7 +14,7 @@ const comunidad = () => {
                 <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
                 <Text style={GlobalStyles.titulocomunidad}>PATITAS AL RESCATE</Text>
                 <Image 
-                    source={require("../../assets/images/logo_2.png")}
+                    source={require("../../../assets/images/logo_2.png")}
                     style={{width: 50, height:50, position:'relative', right:15}}
                 ></Image>
             </View>
@@ -26,7 +26,7 @@ const comunidad = () => {
                     podamos actuar juntos
                 </Text>
                 <Image 
-                    source={require("../../assets/images/ubicacion.png")}
+                    source={require("../../../assets/images/ubicacion.png")}
                     style={{width: 300, height: 280, position:'relative', 
                         alignSelf:'center', borderRadius:30, margin: 15, marginBottom:0}}
                 ></Image>
