@@ -323,6 +323,7 @@ viewAzulDiscusion:{
     height:100,
     flexDirection:'column',
     paddingBottom:10,
+    justifyContent:'space-between'
 },
 textosTemas:{
     fontSize: RFValue(15),
@@ -334,6 +335,7 @@ textosTemas:{
 iconos:{
     color: Colors.blueText,
     fontSize: RFValue(16),
+    alignSelf:'flex-end'
     //no he podido poner los iconos a la izquierda
 },
 //patitas al rescate-----------------------------------------------

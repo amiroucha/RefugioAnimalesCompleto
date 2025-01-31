@@ -26,24 +26,22 @@ const comunidad = () => {
                 <View style={GlobalStyles.viewAzulDiscusion}>
                     <Text style={GlobalStyles.textosTemas}> 
                         Guías de alimentación B.A.R.F. para tu animal. 
-                        <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>12</Ionicons>
                     </Text>
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>12</Ionicons>
                 </View>
                 
                 <View style={GlobalStyles.viewAzulDiscusion}>
                     <Text style={GlobalStyles.textosTemas}>
                         Consejos para sobrellevar la ola de calor con tu mascota.
-                        <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>45</Ionicons>
-
                     </Text>
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>45</Ionicons>
                 </View>
 
                 <View style={GlobalStyles.viewAzulDiscusion}>
                     <Text style={GlobalStyles.textosTemas}>
                         Como empezar a adiestrar a tu mascota.
-                        <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>32</Ionicons>
-
                     </Text>
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>32</Ionicons>
                 </View>
 
                 <View style={{alignItems:'flex-end',width:'95%'}}>
