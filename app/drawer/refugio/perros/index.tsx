@@ -1,5 +1,5 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image, Pressable, TextInput} from 'react-native';
+import { View, Text, Image, Pressable, TextInput, Alert} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
 import Boton from '../../../../components/Boton';
@@ -70,7 +70,9 @@ const perros = () => {
                 </View>
                
             <View style={{width:"90%", marginTop:10}}>
-                <Boton label='Dame un hogar' backgroundColor='naranja' link='../../drawer'></Boton>
+            <Boton label='Dame un hogar' backgroundColor='naranja' link='../../drawer'
+                onPress={() => Alert.alert("Ponte en contacto con nosotros")}></Boton>
+
             </View>
             
         </View>

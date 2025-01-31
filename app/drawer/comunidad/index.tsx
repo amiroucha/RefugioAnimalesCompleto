@@ -1,5 +1,5 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Alert } from 'react-native';
 import Boton from "../../../components/Boton";
 import { Ionicons } from '@expo/vector-icons';
 import { withDecay } from "react-native-reanimated";
@@ -45,7 +45,9 @@ const comunidad = () => {
                 </View>
 
                 <View style={{alignItems:'flex-end',width:'95%'}}>
-                    <Boton label='Nuevo' backgroundColor="naranja" width={120} link='../drawer'></Boton>
+                <Boton label='Nuevo' backgroundColor="naranja" width={120} link='../drawer'
+                    onPress={() => Alert.alert("Comunidad Animal cargando...")}></Boton>
+
                 </View>
             </View>
         
