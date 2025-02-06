@@ -8,7 +8,7 @@ import { Colors } from '@/theme/Colors';
 
 const login = () => {
   return (
-    <ScrollView style={{backgroundColor:Colors.blueDark}}>
+
     
       <View style={[GlobalStyles.contenedor, GlobalStyles.box]}>
         
@@ -69,7 +69,6 @@ const login = () => {
         </View>
 
       </View>
-    </ScrollView>
   )
 }
 
