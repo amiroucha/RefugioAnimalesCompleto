@@ -4,13 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
 import Boton from '../../../../components/Boton';
 import { RFValue } from "react-native-responsive-fontsize";
+import { Colors } from "@/theme/Colors";
 
 
 
 
 const perros = () => {
     return (
-        <ScrollView>
+        <ScrollView  style={{backgroundColor:Colors.blueDark}}>
         <View style={GlobalStyles.contenedor}>
             
             <View style={{backgroundColor:'white', borderRadius:30, width:'90%'}}>

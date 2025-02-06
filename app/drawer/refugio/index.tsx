@@ -9,7 +9,7 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 const refugio = () => {
     return (
-        <ScrollView style={{ flex: 1 }}>
+        <ScrollView  style={{backgroundColor:Colors.blueDark}}>
             <View style={GlobalStyles.contenedor}>
                 
                 <View style={GlobalStyles.cajaNaranja}>

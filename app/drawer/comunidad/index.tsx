@@ -3,12 +3,13 @@ import { View, Text, Image, StyleSheet, Alert, ScrollView } from 'react-native';
 import Boton from "../../../components/Boton";
 import { Ionicons } from '@expo/vector-icons';
 import { withDecay } from "react-native-reanimated";
+import { Colors } from "@/theme/Colors";
 
 
 
 const comunidad = () => {
     return (
-        <ScrollView>
+        <ScrollView  style={{backgroundColor:Colors.blueDark}}>
 
         
             <View style={GlobalStyles.contenedor}>

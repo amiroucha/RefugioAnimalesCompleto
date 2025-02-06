@@ -389,7 +389,7 @@ input2Rescate:{
     marginTop:10
 },
 imagenRescateStyle:{
-    width: width * 0.8,
+    width: '100%',
     height: height * 0.35,
     position:'relative', 
     alignSelf:'center',
@@ -485,7 +485,7 @@ nombrePerro:{
 
 //perros----------------------------------
 imagenPerroPluto:{
-    width: RFValue(310),
+    width: '100%',
     height:RFValue(280),
     borderRadius:30,
     alignSelf:'center',

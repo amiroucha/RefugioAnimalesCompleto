@@ -3,11 +3,12 @@ import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../../components/Boton';
 import { router } from "expo-router";
+import { Colors } from '@/theme/Colors';
 
 
 const login = () => {
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor:Colors.blueDark}}>
     
       <View style={[GlobalStyles.contenedor, GlobalStyles.box]}>
         

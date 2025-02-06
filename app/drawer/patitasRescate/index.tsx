@@ -8,7 +8,7 @@ import { Alert } from "react-native";
 
 const comunidad = () => {
     return (
-        <ScrollView>
+        <ScrollView  style={{backgroundColor:Colors.blueDark}}>
 
             <View style={GlobalStyles.contenedor}>
                 

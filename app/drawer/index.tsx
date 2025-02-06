@@ -4,6 +4,7 @@ import { router } from "expo-router";
 import { useNavigation } from "@react-navigation/native";
 import { Alert } from "react-native";
 import { RFValue } from 'react-native-responsive-fontsize';
+import { Colors } from "@/theme/Colors";
 
 
 //este es el MENUUUUUUUU------------------------------------------------------------------
@@ -11,7 +12,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 const menu = () => {
     const navigation = useNavigation();
     return (
-        <ScrollView> 
+        <ScrollView  style={{backgroundColor:Colors.blueDark}}> 
             <View style={GlobalStyles.contenedor}>
 
                 <View style={GlobalStyles.cajaBlancaMenu}>
