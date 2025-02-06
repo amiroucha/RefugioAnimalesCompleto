@@ -11,77 +11,82 @@ import { RFValue } from 'react-native-responsive-fontsize';
 const menu = () => {
     const navigation = useNavigation();
     return (
-        <ScrollView contentContainerStyle={GlobalStyles.contenedor}>
-            <View style={GlobalStyles.cajaBlancaMenu}>
-                <Text style={GlobalStyles.textoSeccion}>Secciones</Text>
+        <ScrollView> 
+            <View style={GlobalStyles.contenedor}>
 
-                <View style={GlobalStyles.margenSecciones}>
-                    <View style={GlobalStyles.seccionesStyle}>
-                        <Image 
-                            source={require("../../assets/images/patitasRescate.png")}
-                            style={GlobalStyles.imagenesMenu}
-                        />
-                        <Pressable onPress={() => { router.push('/drawer/patitasRescate') }}>
-                            <Text style={GlobalStyles.seccionesMenu}>Patitas al rescate</Text>
-                        </Pressable>
-                    </View>
+                <View style={GlobalStyles.cajaBlancaMenu}>
 
-                    <View style={GlobalStyles.seccionesStyle}>
-                        <Image 
-                            source={require("../../assets/images/patitasMarcha.png")}
-                            style={GlobalStyles.imagenesMenu}
-                        />
-                        <Pressable onPress={() => {
-                            Alert.alert('Infórmate de más pulsando sobre Comunidad Animal');
-                        }}>
-                            <Text style={GlobalStyles.seccionesMenu}>Patitas en marcha</Text>
-                        </Pressable>
-                    </View>
+                    <Text style={GlobalStyles.textoSeccion}>Secciones</Text>
 
-                    <View style={GlobalStyles.seccionesStyle}>
-                        <Image 
-                            source={require("../../assets/images/refugio.png")}
-                            style={GlobalStyles.imagenesMenu}
-                        />
-                        <Pressable onPress={() => { router.push('/drawer/refugio') }}>
-                            <Text style={GlobalStyles.seccionesMenu}>Refugio de patitas</Text>
-                        </Pressable>
-                    </View>
+                    <View style={GlobalStyles.margenSecciones}>
+                            <View style={GlobalStyles.seccionesStyle}>
+                                <Image 
+                                    source={require("../../assets/images/patitasRescate.png")}
+                                    style={GlobalStyles.imagenesMenu}
+                                ></Image>
+                                <Pressable onPress={()=>{router.push('/drawer/patitasRescate')}}>
+                                    <Text style={GlobalStyles.seccionesMenu}>Patitas al rescate</Text>
+                                </Pressable>
+                            </View>
+                            <View style={GlobalStyles.seccionesStyle}>
+                                <Image 
+                                    source={require("../../assets/images/patitasMarcha.png")}
+                                    style={GlobalStyles.imagenesMenu}
+                                ></Image>
 
-                    <View style={GlobalStyles.seccionesStyle}>
-                        <Image 
-                            source={require("../../assets/images/comunidad.png")}
-                            style={GlobalStyles.imagenesMenu}
-                        />
-                        <Pressable onPress={() => { router.push('/drawer/comunidad') }}>
-                            <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
-                        </Pressable>
-                    </View>
+                                <Pressable onPress= {()=>{
+                                    Alert.alert('Infórmate de más pulsando sobre Comunidad Animal') }}>
+                                    <Text style={GlobalStyles.seccionesMenu}>Patitas en marcha</Text>
+                                </Pressable>
+                            </View>
+                            
+                            <View style={GlobalStyles.seccionesStyle}>
+                                <Image 
+                                    source={require("../../assets/images/refugio.png")}
+                                    style={GlobalStyles.imagenesMenu}
+                                ></Image>
 
-                    <View style={GlobalStyles.seccionesStyle}>
-                        <Image 
-                            source={require("../../assets/images/sobrePetconnect.png")}
-                            style={GlobalStyles.imagenesMenu}
-                        />
-                        <Pressable onPress={() => {
-                            Alert.alert('Conócenos navegando en nuestra app');
-                        }}>
-                            <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
-                        </Pressable>
-                    </View>
+                                <Pressable onPress={()=>{router.push('/drawer/refugio')}}>
+                                    <Text style={GlobalStyles.seccionesMenu}>Refugio de patitas</Text>
+                                </Pressable>
+                            </View>
+                        
+                            <View style={GlobalStyles.seccionesStyle}>
+                                <Image 
+                                    source={require("../../assets/images/comunidad.png")}
+                                    style={GlobalStyles.imagenesMenu}
+                                ></Image>
+                                <Pressable onPress={()=>{router.push('/drawer/comunidad')}}>
+                                    <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
+                                </Pressable>
+                                
+                            </View>
+                            
+                            <View style={GlobalStyles.seccionesStyle}>
+                                <Image 
+                                    source={require("../../assets/images/sobrePetconnect.png")}
+                                    style={GlobalStyles.imagenesMenu}
+                                ></Image>
+                                <Pressable onPress= {()=>{Alert.alert('Conócenos navengando en nuestra app') }}>
+                                <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
+                            </Pressable>
+                            </View>
+                        </View>
+                    
                 </View>
-            </View>
-
-            <Text style={GlobalStyles.textoProtectoras}>PROTECTORAS EN COLABORACIÓN</Text>
-            <View style={{ flexDirection: 'row', columnGap: 20 }}>
-                <Image 
-                    source={require("../../assets/images/logoProtectora1.png")}
-                    style={GlobalStyles.imagenesProtectoras}
-                />
-                <Image 
-                    source={require("../../assets/images/logoProtectora2.png")}
-                    style={GlobalStyles.imagenesProtectoras}
-                />
+            
+                <Text style={GlobalStyles.textoProtectoras}>PROTECTORAS EN COLABORACIÓN</Text>
+                <View style={{flexDirection:'row', columnGap: 20,}}>
+                    <Image 
+                        source={require("../../assets/images/logoProtectora1.png")}
+                        style={GlobalStyles.imagenesProtectoras}
+                    ></Image>
+                    <Image 
+                        source={require("../../assets/images/logoProtectora2.png")}
+                        style={GlobalStyles.imagenesProtectoras}
+                    ></Image>
+                </View>
+                
             </View>
         </ScrollView>
     )}
