@@ -485,18 +485,19 @@ nombrePerro:{
 
 //perros----------------------------------
 imagenPerroPluto:{
-    width: 320,
-    height:280,
+    width: RFValue(310),
+    height:RFValue(280),
     borderRadius:30,
     alignSelf:'center',
     margin:10,
 },
 nombreUbica:{
     //contenedor del nombre y la ubicacion
+    display:'flex',
     flexDirection: 'row',
-    columnGap: 230,
-    margin:10,
+    
     fontFamily: 'Poppins',
+    justifyContent:'space-between',
 },
 iconoUbi:{
     color: Colors.blueText,
@@ -512,8 +513,8 @@ nombrePluto:{
 },
 cajaNaranjaPerro:{
     backgroundColor: Colors.orangeContainer,
-    borderRadius:20,
-    width: 110,
+    borderRadius:15,
+    width: 100,
     height: 55,
     alignItems:'center',
     justifyContent:'space-between',
@@ -527,6 +528,7 @@ datosPerro:{
 perfilAna:{
     flexDirection:'row',
     justifyContent:'space-between',
+    flexWrap:'wrap'
 },
 cajaAzulperros:
 {
