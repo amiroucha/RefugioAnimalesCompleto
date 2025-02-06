@@ -19,7 +19,7 @@ const login = () => {
           />
         </View>
 
-        <View style={{ position: 'relative', top: -10 }}>
+        <View style={{ position: 'relative', top: -43 }}>
           <Text style={GlobalStyles.tituloLogin}>Bienvenido a</Text>
           <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
         </View>

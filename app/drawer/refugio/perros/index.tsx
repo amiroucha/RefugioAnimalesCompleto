@@ -27,7 +27,7 @@ const perros = () => {
                         <Ionicons name="heart-circle" color="blue" size={45} style={GlobalStyles.iconoCorazon}/>
                     </View>
                     
-                    <View style={{flexDirection: 'row',}}>
+                    <View style={{flexDirection: 'row', alignItems:'center', marginBottom:10}}>
                         <Ionicons name="location" size={30} style={GlobalStyles.iconoUbi}/>
                         <Text style={{fontSize:RFValue(16)}}>Murcia</Text>
                     </View>
@@ -35,15 +35,15 @@ const perros = () => {
                     <View style={{display:'flex',flexDirection: 'row', justifyContent:'space-between', flexWrap:'wrap'}}>
                         <View style={GlobalStyles.cajaNaranjaPerro}>
                             <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Sexo</Text>
-                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(16),}]}>Macho</Text>
+                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(15),}]}>Macho</Text>
                         </View>
                         <View style={GlobalStyles.cajaNaranjaPerro}>
                             <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Edad</Text>
-                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(16)}]}>1.5 años</Text>
+                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(15)}]}>1.5 años</Text>
                         </View>
                         <View style={GlobalStyles.cajaNaranjaPerro}>
                             <Text style={[GlobalStyles.datosPerro, {fontWeight:'bold',}]}>Tipo</Text>
-                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(16)}]}>Bodeguero</Text>
+                            <Text style={[GlobalStyles.datosPerro ,{fontSize:RFValue(15)}]}>Bodeguero</Text>
                         </View>
                     </View>
 
@@ -57,10 +57,10 @@ const perros = () => {
                                 <Text style={GlobalStyles.datosPerro}>Ana</Text>
                                 <Text style={GlobalStyles.datosPerro}>PerrosAbandona2</Text>
                             </View>
-
-                            <Ionicons name="call-outline" size={30} style={GlobalStyles.iconoPerros}/>
-                            <Ionicons name="chatbubble-ellipses" size={30} style={GlobalStyles.iconoPerros}/>
-
+                            <View style={{display:'flex', flexWrap:'wrap', flexDirection:'row'}}>
+                                <Ionicons name="call-outline" size={30} style={GlobalStyles.iconoPerros}/>
+                                <Ionicons name="chatbubble-ellipses" size={30} style={GlobalStyles.iconoPerros}/>
+                            </View>
                         </View>
                         
                         <Text style={GlobalStyles.nombreAna}>

@@ -82,6 +82,7 @@ botonNaranja:
     padding: 15,
     width:'auto',
     height: height * 0.07,
+    marginBottom: 5,
 
 },
 botonGris:
@@ -91,7 +92,7 @@ botonGris:
     borderColor: Colors.white,
     width:'auto',
     borderWidth: 4,
-    height: 59 ,
+    height: 53 ,
     textAlign:'center',
 },
 //PANTALLA DE LOGIN------------------------------------
@@ -100,8 +101,8 @@ fondoBlancoLog:{
     borderRadius: 30,
     flex: 1,
     width: '100%',
-    top:50,
-    marginBottom:59,
+    top:35,
+    marginBottom:30,
 },
 tituloLogin:{
     fontSize: RFValue(20),
@@ -156,13 +157,13 @@ textRegistrar:{
 },
 //patas-------------------------------------------------------
 pataArriba:{
-    width: width * 0.13,
+    width: width * 0.12,
     height: height * 0.05,
     alignSelf:'flex-start',
     transform:[{rotate: '-45deg'}],
 },
 pataAbajo:{
-    width: width * 0.13,
+    width: width * 0.12,
     height:height * 0.05,
     alignSelf:'flex-end',
     marginBottom:10,
@@ -173,11 +174,12 @@ contenedorGrisOscuro:{
     backgroundColor:Colors.greyDark,
     borderRadius: 30,
     width: '100%',
-    top:'20%',
+    top:'15%',
+    marginBottom:5,
 },
 tituloRegistro:{
     fontSize: RFValue(20),
-    top: 60,
+    top: 56,
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueDark,
@@ -186,7 +188,7 @@ tituloRegistro:{
 },
 PetConnectRegistro:{
     textAlign: "center",
-    fontSize: RFValue(45),
+    fontSize: RFValue(42),
     fontFamily:'WendyOne',
     color: Colors.blueDark,
     marginBottom: 20,
@@ -195,18 +197,18 @@ PetConnectRegistro:{
 
 textoUnirse:{
     color: Colors.white,
-    fontSize: RFValue(24),
+    fontSize: RFValue(23),
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
 
 },
 perroGatoReg:{
-    width: width * 0.64, 
+    width: width * 0.60, 
     height: height * 0.23,
     position:'absolute', 
     alignSelf:'center',    
-    top: 150,
+    top: 130,
 },
 contenedorBotones:{
     display:'flex',
@@ -514,7 +516,7 @@ nombrePluto:{
 cajaNaranjaPerro:{
     backgroundColor: Colors.orangeContainer,
     borderRadius:15,
-    width: 100,
+    width: 90,
     height: 55,
     alignItems:'center',
     justifyContent:'space-between',
@@ -527,7 +529,7 @@ datosPerro:{
 },
 perfilAna:{
     flexDirection:'row',
-    justifyContent:'space-between',
+    alignItems:'center',
     flexWrap:'wrap'
 },
 cajaAzulperros:
@@ -549,8 +551,9 @@ iconoPerros:{
     borderRadius: 60,
     padding: 5,
     height: 40,
-    alignSelf:'center'
-
+    alignSelf:'center',
+    marginRight:5,
+    marginLeft:8
 },
 
 

@@ -59,7 +59,7 @@ const signUp = () => {
           </View>
         </View>
 
-        <View style={{position: 'relative', top: 180}}>
+        <View style={{position: 'relative', top: 100}}>
           <Pressable onPress={() => {router.push('../login')}}>
             <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio.</Text>
           </Pressable>
