@@ -13,7 +13,7 @@ const refugio = () => {
             <View style={GlobalStyles.contenedor}>
                 
                 <View style={GlobalStyles.cajaNaranja}>
-                    <Text style={[GlobalStyles.primerTexto , {fontWeight:'bold'}, {fontSize:RFValue(16)}]}>Adoptar es un compromiso paratoda la vida, piénsalo bien antes de dar el paso.{"\n"}<Text style={[GlobalStyles.primerTexto , {color:Colors.black}]}>Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text></Text>
+                    <Text style={[GlobalStyles.primerTexto , {fontWeight:'bold'}, {fontSize:RFValue(16)}]}>Adoptar es un compromiso para toda la vida, piénsalo bien antes de dar el paso.{"\n"}<Text style={[GlobalStyles.primerTexto , {color:Colors.black}]}>Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text></Text>
                 
                     <Image 
                         source={require("../../../assets/images/perritosYgatitos.png")}

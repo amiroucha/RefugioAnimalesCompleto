@@ -44,10 +44,12 @@ const signUp = () => {
             <TextInput
               style={GlobalStyles.input}
               placeholder="Contraseña"
+              secureTextEntry={true}
             />
             <TextInput
               style={GlobalStyles.input}
               placeholder="Repetir contraseña"
+              secureTextEntry={true}
             />    
 
             <View style={GlobalStyles.contenedorBotones}>
