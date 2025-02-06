@@ -83,7 +83,6 @@ botonNaranja:
     width:'auto',
     height: height * 0.07,
     marginBottom: 5,
-
 },
 botonGris:
 {
